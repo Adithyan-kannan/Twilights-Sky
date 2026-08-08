@@ -98,12 +98,13 @@ input {
 
 .brand-mark {
   display: grid;
-  width: 2.25rem;
+  width: 2.65rem;
   height: 2.25rem;
   place-items: center;
   border-radius: var(--radius);
   background: var(--text);
   color: var(--bg);
+  font-size: 0.85rem;
 }
 
 .nav-links {
