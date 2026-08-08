@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Two Voices Blog</title>
+    <meta
+      name="description"
+      content="A modern responsive blog page ready for your content."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="progress-bar" id="progressBar"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Go to homepage">
+        <span class="brand-mark">B</span>
+        <span>Blogspace</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#featured">Featured</a>
+        <a href="#topics">Topics</a>
+        <a href="#articles">Articles</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#newsletter">Newsletter</a>
+      </nav>
+
+      <button class="icon-button" id="themeToggle" type="button" aria-label="Toggle theme">
+        <span aria-hidden="true">☾</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="eyebrow">Two writers, two worlds</p>
+          <h1 id="hero-title">Cars, feelings, and the stories between them.</h1>
+          <p class="hero-copy">
+            One side of the blog is built for car stories, reviews, and road culture.
+            The other explores personal life, human emotions, and reflective writing.
+          </p>
+
+          <form class="search-panel" role="search">
+            <label class="sr-only" for="searchInput">Search articles</label>
+            <input
+              id="searchInput"
+              type="search"
+              placeholder="Search articles..."
+              autocomplete="off"
+            />
+            <button type="submit">Search</button>
+          </form>
+        </div>
+
+        <aside class="hero-card" aria-label="Featured insight">
+          <p class="card-label">Current focus</p>
+          <h2>Track which topic your readers choose most.</h2>
+          <p>
+            Cars and Emotions are marked separately in the code, so analytics can
+            show which side of the blog gets more visitors once the site is live.
+          </p>
+          <a href="#topics" class="text-link">View topics</a>
+        </aside>
+      </section>
+
+      <section class="topics-section" id="topics" aria-labelledby="topics-title">
+        <div class="section-heading">
+          <p class="eyebrow">Topics</p>
+          <h2 id="topics-title">Choose a side of the blog</h2>
+        </div>
+
+        <div class="topic-grid">
+          <a class="topic-card cars-topic" href="#articles" data-topic-link="cars">
+            <span class="tag">Cars</span>
+            <h3>Cars Blog</h3>
+            <p>
+              Reviews, buying guides, ownership stories, road trips, and automotive culture.
+            </p>
+          </a>
+
+          <a class="topic-card emotions-topic" href="#articles" data-topic-link="emotions">
+            <span class="tag">Emotions</span>
+            <h3>Personal & Human Emotions</h3>
+            <p>
+              Reflections on relationships, growth, memories, identity, and everyday feelings.
+            </p>
+          </a>
+        </div>
+      </section>
+
+      <section class="featured" id="featured" aria-labelledby="featured-title">
+        <div class="section-heading">
+          <p class="eyebrow">Featured</p>
+          <h2 id="featured-title">Start here</h2>
+        </div>
+
+        <article class="feature-grid">
+          <div class="feature-image" role="img" aria-label="Abstract editorial image"></div>
+          <div class="feature-copy">
+            <span class="tag">Cars</span>
+            <h3>Your strongest cars article headline goes here</h3>
+            <p>
+              Add a concise excerpt here. This featured slot can highlight a car
+              review, buying guide, road trip story, or automotive opinion piece.
+            </p>
+            <div class="article-meta">
+              <span>8 min read</span>
+              <span>Updated recently</span>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="articles-section" id="articles" aria-labelledby="articles-title">
+        <div class="section-heading row">
+          <div>
+            <p class="eyebrow">Latest</p>
+            <h2 id="articles-title">Recent articles</h2>
+          </div>
+
+          <div class="filter-tabs" aria-label="Article filters">
+            <button class="filter-button active" type="button" data-filter="all">All</button>
+            <button class="filter-button" type="button" data-filter="cars">Cars</button>
+            <button class="filter-button" type="button" data-filter="emotions">Emotions</button>
+          </div>
+        </div>
+
+        <div class="article-grid" id="articleGrid">
+          <a class="article-card" href="posts/cars-post-template.html" data-category="cars" data-topic="cars">
+            <span class="tag">Cars</span>
+            <h3>Placeholder headline for a car review</h3>
+            <p>
+              A short preview of a review, comparison, or ownership story will live here.
+            </p>
+            <div class="article-meta">
+              <span>6 min read</span>
+              <span>Aug 2026</span>
+            </div>
+            <span class="read-more">Read cars sample</span>
+          </a>
+
+          <a class="article-card" href="posts/emotions-post-template.html" data-category="emotions" data-topic="emotions">
+            <span class="tag">Emotions</span>
+            <h3>Reflective headline about personal growth</h3>
+            <p>
+              Use this card for essays about memories, relationships, self-awareness, or healing.
+            </p>
+            <div class="article-meta">
+              <span>10 min read</span>
+              <span>Aug 2026</span>
+            </div>
+            <span class="read-more">Read emotions sample</span>
+          </a>
+
+          <a class="article-card" href="posts/cars-post-template.html" data-category="cars" data-topic="cars">
+            <span class="tag">Cars</span>
+            <h3>Buying guide headline for readers to bookmark</h3>
+            <p>
+              Use this for practical car advice, maintenance notes, or model comparisons.
+            </p>
+            <div class="article-meta">
+              <span>4 min read</span>
+              <span>Aug 2026</span>
+            </div>
+            <span class="read-more">Read cars sample</span>
+          </a>
+
+          <a class="article-card" href="posts/emotions-post-template.html" data-category="emotions" data-topic="emotions">
+            <span class="tag">Emotions</span>
+            <h3>Another clean title for a human story</h3>
+            <p>
+              Replace this summary with a preview of an emotional or personal essay.
+            </p>
+            <div class="article-meta">
+              <span>7 min read</span>
+              <span>Aug 2026</span>
+            </div>
+            <span class="read-more">Read emotions sample</span>
+          </a>
+
+          <a class="article-card" href="posts/cars-post-template.html" data-category="cars" data-topic="cars">
+            <span class="tag">Cars</span>
+            <h3>Road trip or driving experience headline</h3>
+            <p>
+              Add automotive stories, long drives, owner diaries, or car culture posts.
+            </p>
+            <div class="article-meta">
+              <span>9 min read</span>
+              <span>Aug 2026</span>
+            </div>
+            <span class="read-more">Read cars sample</span>
+          </a>
+
+          <a class="article-card" href="posts/emotions-post-template.html" data-category="emotions" data-topic="emotions">
+            <span class="tag">Emotions</span>
+            <h3>Compact note about everyday feelings</h3>
+            <p>
+              Add shorter reflections, observations, personal notes, or journal-style posts.
+            </p>
+            <div class="article-meta">
+              <span>3 min read</span>
+              <span>Aug 2026</span>
+            </div>
+            <span class="read-more">Read emotions sample</span>
+          </a>
+        </div>
+
+        <p class="empty-state" id="emptyState">No articles match your search.</p>
+      </section>
+
+      <section class="newsletter" id="newsletter" aria-labelledby="newsletter-title">
+        <div>
+          <p class="eyebrow">Newsletter</p>
+          <h2 id="newsletter-title">Get new posts in your inbox.</h2>
+          <p>
+            Replace this copy with your newsletter promise for car readers,
+            emotional essay readers, or both.
+          </p>
+        </div>
+
+        <form class="newsletter-form">
+          <label class="sr-only" for="emailInput">Email address</label>
+          <input id="emailInput" type="email" placeholder="you@example.com" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
+
+      <section class="reviews-section" id="reviews" aria-labelledby="reviews-title">
+        <div class="section-heading">
+          <p class="eyebrow">Reviews</p>
+          <h2 id="reviews-title">Reader thoughts</h2>
+          <p class="section-copy">
+            Readers can leave public comments here after signing in with GitHub.
+            Replace the Giscus placeholder values in this file after setting up your repository.
+          </p>
+        </div>
+
+        <div class="giscus-wrapper">
+          <script
+            src="https://giscus.app/client.js"
+            data-repo="YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME"
+            data-repo-id="YOUR_REPOSITORY_ID"
+            data-category="General"
+            data-category-id="YOUR_DISCUSSION_CATEGORY_ID"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="light"
+            data-lang="en"
+            crossorigin="anonymous"
+            async
+          ></script>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Blogspace. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">RSS</a>
+        <a href="#">Contact</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
