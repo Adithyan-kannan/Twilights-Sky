@@ -175,6 +175,42 @@
       
         </div>
       </section>
+      <script>
+        const postThemeToggle = document.getElementById("themeToggle");
+      
+        if (postThemeToggle) {
+          const postBody = document.body;
+      
+          // Restore saved theme
+          const savedTheme = localStorage.getItem("blog-theme");
+      
+          if (savedTheme === "dark") {
+            postBody.classList.add("dark");
+      
+            const icon = postThemeToggle.querySelector("span");
+            if (icon) {
+              icon.textContent = "☀";
+            }
+          }
+      
+          postThemeToggle.addEventListener("click", function () {
+            postBody.classList.toggle("dark");
+      
+            const isDark = postBody.classList.contains("dark");
+      
+            localStorage.setItem(
+              "blog-theme",
+              isDark ? "dark" : "light"
+            );
+      
+            const icon = postThemeToggle.querySelector("span");
+      
+            if (icon) {
+              icon.textContent = isDark ? "☀" : "☾";
+            }
+          });
+        }
+      </script>
       
       <script
         type="module"
