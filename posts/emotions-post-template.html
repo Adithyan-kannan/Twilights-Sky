@@ -69,9 +69,112 @@
             from the homepage article card.
           </p>
         </section>
-      </article>
-    </main>
 
-    <script src="../script.js"></script>
+        <section
+  class="comments-section"
+  id="comments"
+  aria-labelledby="comments-title"
+>
+  <h2 id="comments-title">Comments</h2>
+
+  <p class="comments-intro">
+    Enjoyed the post? Share your thoughts, experiences, or feedback below.
+  </p>
+
+  <div class="comments-wrapper">
+
+    <div id="commentsLogin" class="comments-login">
+
+      <p>
+        Sign in with Google to join the conversation.
+      </p>
+
+      <button
+        id="googleSignIn"
+        type="button"
+        class="google-signin-button"
+      >
+        Sign in with Google
+      </button>
+
+    </div>
+
+
+    <div
+      id="commentsForm"
+      class="comments-form"
+      hidden
+    >
+
+      <div class="user-info">
+
+        <img
+          id="userPhoto"
+          class="user-photo"
+          src=""
+          alt=""
+        />
+
+        <div>
+
+          <strong id="userName"></strong>
+
+          <button
+            id="signOut"
+            type="button"
+            class="sign-out-button"
+          >
+            Sign out
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <textarea
+        id="commentText"
+        maxlength="2000"
+        rows="4"
+        placeholder="Share your thoughts..."
+      ></textarea>
+
+
+      <div class="comment-form-footer">
+
+        <span id="characterCount">
+          0 / 2000
+        </span>
+
+        <button
+          id="postComment"
+          type="button"
+        >
+          Post Comment
+        </button>
+
+      </div>
+
+
+      <p id="commentMessage"></p>
+
+    </div>
+
+
+    <div id="commentsList">
+
+      <p>
+        Loading comments...
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
+<script
+  type="module"
+  src="../comments.js"
+></script>
   </body>
 </html>

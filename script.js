@@ -33,6 +33,8 @@ function syncGiscusTheme() {
   );
 }
 
+
+
 function trackTopicView(topic, source) {
   const storageKey = `topic-views-${topic}`;
   const currentCount = Number(localStorage.getItem(storageKey) || 0);
