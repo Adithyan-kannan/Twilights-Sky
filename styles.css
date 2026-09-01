@@ -397,7 +397,7 @@ button[type="submit"] {
 
 .article-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
 }
 
@@ -536,6 +536,12 @@ button[type="submit"] {
 .emotions-cover {
   background:
     linear-gradient(135deg, rgba(242, 201, 76, 0.5), rgba(15, 118, 110, 0.5)),
+    url("https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&w=1400&q=80");
+}
+
+.emotions-feature {
+  background:
+    linear-gradient(135deg, rgba(242, 201, 76, 0.6), rgba(15, 118, 110, 0.6)),
     url("https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&w=1400&q=80");
 }
 
